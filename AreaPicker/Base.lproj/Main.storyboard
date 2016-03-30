@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2x-HC-dq7">
+                                <rect key="frame" x="137" y="69" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Zxb-Wn-8at"/>
+                                    <constraint firstAttribute="height" constant="30" id="hIi-dR-hu6"/>
+                                </constraints>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="selectButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QwD-wO-VeT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKY-cg-Jan">
+                                <rect key="frame" x="10" y="149" width="300" height="21"/>
+                                <color key="backgroundColor" red="0.64331680536270142" green="0.65853327512741089" blue="0.87271708250045776" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="e7n-0o-UuS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWI-FU-iOz">
+                                <rect key="frame" x="130" y="107" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="F4M-p6-hPg"/>
+                                    <constraint firstAttribute="height" constant="30" id="Myf-0u-LG6"/>
+                                </constraints>
+                                <state key="normal" title="Hidden"/>
+                                <connections>
+                                    <action selector="hiddenButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ex9-6N-VND"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dKY-cg-Jan" firstAttribute="top" secondItem="k2x-HC-dq7" secondAttribute="bottom" constant="50" id="3Vm-YU-5ye"/>
+                            <constraint firstItem="dKY-cg-Jan" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="EF6-hd-NbI"/>
+                            <constraint firstItem="kWI-FU-iOz" firstAttribute="top" secondItem="k2x-HC-dq7" secondAttribute="bottom" constant="8" id="ZGP-2u-PQy"/>
+                            <constraint firstItem="k2x-HC-dq7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kTf-Is-jxn"/>
+                            <constraint firstItem="kWI-FU-iOz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lfV-av-Fh4"/>
+                            <constraint firstAttribute="trailing" secondItem="dKY-cg-Jan" secondAttribute="trailing" constant="10" id="mVk-rQ-bQE"/>
+                            <constraint firstItem="k2x-HC-dq7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="tJg-T4-pEC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selectedAreaShowLabel" destination="dKY-cg-Jan" id="JjY-eO-8nc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300" y="510"/>
+        </scene>
+    </scenes>
+</document>
