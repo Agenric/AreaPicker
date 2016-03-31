@@ -30,6 +30,11 @@ UIPickerViewDataSource
     if (self) {
         self = [[[NSBundle mainBundle] loadNibNamed:@"AreaPickerView" owner:self options:nil] lastObject];
         [self setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.6]];
+        
+        UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
+        singleTap.numberOfTapsRequired = 1;
+        [self addGestureRecognizer:singleTap];
+        
         [self loadData];
     }
     return self;
@@ -120,6 +125,9 @@ UIPickerViewDataSource
         [desLabel setText:[[[provinceDictionary valueForKey:[NSString stringWithFormat:@"%ld", (long)row]] allKeys] firstObject]];
         return desLabel;
     } else { // 第三组
+        if (districtArray.count <= row) {
+            return nil;
+        }
         [desLabel setText:districtArray[row]];
         return desLabel;
     }
@@ -166,6 +174,14 @@ UIPickerViewDataSource
     if ([self.delegate respondsToSelector:@selector(areaPickerView:didFinishedSelectWithProvince:city:district:)]) {
         [self.delegate areaPickerView:self didFinishedSelectWithProvince:selectedProvinceName city:selectedCityName district:selectedDistrictName];
     }
+    [self closeAnimation];
+}
+
+- (void)handleSingleTap:(UITapGestureRecognizer *)tap {
+    [self closeAnimation];
+}
+
+- (void)closeAnimation {
     [UIView animateWithDuration:KAnimationTimeInterval animations:^{
         [self setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0]];
         CGRect frame = self.contentView.frame;
