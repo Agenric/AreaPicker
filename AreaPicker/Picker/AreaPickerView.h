@@ -9,16 +9,10 @@
 #import <UIKit/UIKit.h>
 @class AreaPickerView;
 @protocol AreaPickerViewDelegate <NSObject>
-
 - (void)areaPickerView:(AreaPickerView *)areaPickerView didFinishedSelectWithProvince:(NSString *)province city:(NSString *)city district:(NSString *)district;
-
 @end
 
 @interface AreaPickerView : UIView
-<
-UIPickerViewDelegate,
-UIPickerViewDataSource
->
-@property (weak, nonatomic) IBOutlet UIPickerView *myPickerView;
 @property (weak, nonatomic) id<AreaPickerViewDelegate> delegate;
+- (void)show;
 @end

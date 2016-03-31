@@ -22,7 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view addSubview:self.areaPickerView];
 }
 
 - (void)areaPickerView:(AreaPickerView *)areaPickerView didFinishedSelectWithProvince:(NSString *)province city:(NSString *)city district:(NSString *)district {
@@ -30,26 +29,11 @@
 }
 
 - (IBAction)selectButtonAction:(UIButton *)sender {
-    [UIView animateWithDuration:0.5 animations:^{
-        CGRect oldFrame = CGRectMake(0, SCREEN_HEIGHT - kAreaPickerViewHeight, SCREEN_WIDTH, kAreaPickerViewHeight);
-        self.areaPickerView.frame = oldFrame;
-    }];
-}
-
-- (IBAction)hiddenButtonAction:(UIButton *)sender {
-    [UIView animateWithDuration:0.5 animations:^{
-        CGRect oldFrame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, kAreaPickerViewHeight);
-        self.areaPickerView.frame = oldFrame;
-    }];
-}
-
-- (AreaPickerView *)areaPickerView {
-    if (_areaPickerView == nil) {
-        _areaPickerView = [AreaPickerView new];
-        _areaPickerView.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, kAreaPickerViewHeight);
-        _areaPickerView.delegate = self;
+    if (self.areaPickerView == nil) {
+        self.areaPickerView = [AreaPickerView new];
+        self.areaPickerView.delegate = self;
     }
-    return _areaPickerView;
+    [self.areaPickerView show];
 }
 
 @end

@@ -38,25 +38,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWI-FU-iOz">
-                                <rect key="frame" x="130" y="107" width="60" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="F4M-p6-hPg"/>
-                                    <constraint firstAttribute="height" constant="30" id="Myf-0u-LG6"/>
-                                </constraints>
-                                <state key="normal" title="Hidden"/>
-                                <connections>
-                                    <action selector="hiddenButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ex9-6N-VND"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dKY-cg-Jan" firstAttribute="top" secondItem="k2x-HC-dq7" secondAttribute="bottom" constant="50" id="3Vm-YU-5ye"/>
                             <constraint firstItem="dKY-cg-Jan" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="EF6-hd-NbI"/>
-                            <constraint firstItem="kWI-FU-iOz" firstAttribute="top" secondItem="k2x-HC-dq7" secondAttribute="bottom" constant="8" id="ZGP-2u-PQy"/>
                             <constraint firstItem="k2x-HC-dq7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kTf-Is-jxn"/>
-                            <constraint firstItem="kWI-FU-iOz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lfV-av-Fh4"/>
                             <constraint firstAttribute="trailing" secondItem="dKY-cg-Jan" secondAttribute="trailing" constant="10" id="mVk-rQ-bQE"/>
                             <constraint firstItem="k2x-HC-dq7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="tJg-T4-pEC"/>
                         </constraints>
