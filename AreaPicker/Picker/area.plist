@@ -239,41 +239,8 @@
 				<key>邢台市</key>
 				<array>
 					<string>桥东区</string>
-					<string>桥西区
-邢台县
-临城县
-内丘县
-柏乡县
-隆尧县
-任县
-南和县
-宁晋县
-巨鹿县
-新河县
-广宗县
-平乡县
-威县
-清河县
-临西县
-南宫市
-沙河市</string>
-					<string>邢台县
-临城县
-内丘县
-柏乡县
-隆尧县
-任县
-南和县
-宁晋县
-巨鹿县
-新河县
-广宗县
-平乡县
-威县
-清河县
-临西县
-南宫市
-沙河市</string>
+					<string>桥西区</string>
+					<string>邢台县</string>
 					<string>临城县</string>
 					<string>内丘县</string>
 					<string>柏乡县</string>
@@ -476,8 +443,7 @@
 					<string>郊区</string>
 					<string>长治县</string>
 					<string>襄垣县</string>
-					<string>屯留县
-平顺县</string>
+					<string>屯留县</string>
 					<string>平顺县</string>
 					<string>黎城县</string>
 					<string>壶关县</string>
@@ -1109,41 +1075,8 @@
 			<dict>
 				<key>哈尔滨市</key>
 				<array>
-					<string>道里区
-南岗区
-道外区
-平房区
-松北区
-香坊区
-呼兰区
-阿城区
-依兰县
-方正县
-宾县
-巴彦县
-木兰县
-通河县
-延寿县
-双城市
-尚志市
-五常市</string>
-					<string>南岗区
-道外区
-平房区
-松北区
-香坊区
-呼兰区
-阿城区
-依兰县
-方正县
-宾县
-巴彦县
-木兰县
-通河县
-延寿县
-双城市
-尚志市
-五常市</string>
+					<string>道里区</string>
+					<string>南岗区</string>
 					<string>道外区</string>
 					<string>平房区</string>
 					<string>松北区</string>
