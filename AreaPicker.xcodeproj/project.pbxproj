@@ -129,6 +129,8 @@
 				TargetAttributes = {
 					D7D530801CAB7ED600C7E387 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = J56NWSKHS7;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -285,10 +287,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J56NWSKHS7;
 				INFOPLIST_FILE = AreaPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lecarx.AreaPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "91e6ccac-da55-4367-b2f8-2619a15dac68";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Dev_Profile;
 			};
 			name = Debug;
 		};
@@ -296,10 +301,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J56NWSKHS7;
 				INFOPLIST_FILE = AreaPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lecarx.AreaPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "91e6ccac-da55-4367-b2f8-2619a15dac68";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Dev_Profile;
 			};
 			name = Release;
 		};
@@ -322,6 +330,7 @@
 				D7D5309A1CAB7ED600C7E387 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
